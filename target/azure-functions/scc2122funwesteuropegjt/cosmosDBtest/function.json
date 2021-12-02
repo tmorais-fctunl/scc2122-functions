@@ -1,0 +1,13 @@
+{
+  "scriptFile" : "../lab6-1.0.jar",
+  "entryPoint" : "scc.serverless.CosmosDBFunction.updateMostRecentUsers",
+  "bindings" : [ {
+    "type" : "cosmosDBTrigger",
+    "direction" : "in",
+    "name" : "cosmosTest",
+    "databaseName" : "scc2122dbnmp",
+    "connectionStringSetting" : "AzureCosmosDBConnection",
+    "collectionName" : "users",
+    "createLeaseCollectionIfNotExists" : true
+  } ]
+}

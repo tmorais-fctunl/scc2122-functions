@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../lab6-1.0.jar",
+  "entryPoint" : "scc.serverless.HttpFunction.delChannel",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "serverless/delchannel/{id}",
+    "methods" : [ "DELETE" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
